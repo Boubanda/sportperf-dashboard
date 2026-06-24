@@ -8,6 +8,8 @@ import streamlit as st
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+from init_db import ensure_db
+ensure_db()
 from modules.database import db_exists
 
 st.set_page_config(
