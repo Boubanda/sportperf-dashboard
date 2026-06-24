@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1 — Collecter les données",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/modules/collect_data.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "2 — Lancer le dashboard",
+      "type": "python",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "${workspaceFolder}/app.py"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
